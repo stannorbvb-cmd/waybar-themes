@@ -28,8 +28,8 @@
     "custom/updatespacman",
     "network",
     "pulseaudio",
-    "battery",
-    "cpu"
+    "cpu",
+    "battery"
     // "temperature"
     // "clock"
   ],
