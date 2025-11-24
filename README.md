@@ -65,7 +65,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-border/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="2560" height="701" alt="screenshot-2025-11-24_20-29-33" src="https://github.com/user-attachments/assets/eb9bde48-a917-41b6-a415-20075b1fe2b3" />
+<img width="2560" height="681" alt="screenshot-2025-11-24_21-24-40" src="https://github.com/user-attachments/assets/2e2c4598-086a-4362-8155-f8d92a2ba65a" />
+
 
 
 ## Screenshots V3 (trans)
