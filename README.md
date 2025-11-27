@@ -50,7 +50,7 @@ yay -S wttrbar
 ###### STEP2
 ##### V2.2 Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/v2.2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 ###### STEP3
 - after installing wttrbar, set your City location in config.json file and restart waybar  ,
