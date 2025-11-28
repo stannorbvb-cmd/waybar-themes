@@ -115,13 +115,12 @@ tooltip {
   font-size: 10px;
 }
 
-#clock , #custom-weather, #workspaces {
-margin: 0 4px;
-  font-size: 12px;
+#custom-weather {
+padding-left: 4px;
 }
 
 #clock , #custom-weather  {
-margin: 0 4px;
+  margin: 0 4px;
   font-size: 12px;
   margin-right: 6px;
   margin-left: -3px;
