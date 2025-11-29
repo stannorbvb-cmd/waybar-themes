@@ -11,6 +11,7 @@
   "modules-left": [
     "custom/omarchy",
     "clock",
+    "custom/weather",
     "custom/update",
     "custom/screenrecording-indicator",
     "hyprland/workspaces",
@@ -112,6 +113,13 @@
       "🌖",
       "🌕"
     ]
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 1800,
+    "exec": "wttrbar --nerd --location yourlocation",
+    "return-type": "json"
   },
   "cpu": {
     "interval": 2,

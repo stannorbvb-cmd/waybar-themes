@@ -26,11 +26,11 @@ window#waybar {
 }
 
 .modules-left {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 .modules-right {
-  margin-right: 0px;
+  margin-right: 4px;
   font-size: 12px;
 }
 
@@ -81,9 +81,10 @@ window#waybar {
 }
 
 #custom-omarchy {
-padding: 2px 0px 1px;
+padding: 2px 0px 2px;
+margin-right: 0px;
+font-size: 13px;
 margin-left: 4px;
-font-size: 14px;
 }
 
 #hyprland-window,
@@ -94,13 +95,16 @@ font-size: 14px;
 #network,
 #bluetooth,
 #pulseaudio,
-#custom-omarchy,
+#idle_inhibitor,
+#custom-weather,
 #backlight,
 #clock,
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 12px;
+  min-width: 14px;
+  margin: 0 7.5px;
+  font-size: 12px;
 }
 
 #custom-expand-icon {
@@ -112,35 +116,14 @@ tooltip {
 }
 
 
-#custom-update {
-  font-size: 10px;
-  margin: 2px;
-}
-
-#tray, #backlight, #custom-updatespacman, #idle_inhibitor, #network, #pulseaudio, #bluetooth, #battery, #cpu {
-  margin: 0 10px;
-}
-
-#clock {
-  margin-right: 8px;
-  margin-left: 0px;
-  font-size: 12px;
-}
-
-
-#custom-updatespacman, #idle_inhibitor {
-  margin-right: 4px;
-  margin: 0 10px;
-}
-
 .hidden {
   opacity: 0;
 }
 
 #custom-screenrecording-indicator {
     font-size: 12px;
-    padding: 0px;
-    margin: 2px;
+    padding: 1px 0px 1px;
+    margin-left: 0px;
 }
 
 #custom-screenrecording-indicator {
