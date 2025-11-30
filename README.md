@@ -141,16 +141,11 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2-cava/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 ###### STEP2
-- make sure libcava is installed 
-```bash
-yay -S libcava
-```
-###### STEP3
 - to make cava.sh script executable use following command 
 ```bash
 chmod +x ~/.config/waybar/cava.sh
 ```
-###### STEP4
+###### STEP3
 - restart waybar
 ```bash
 omarchy-restart-waybar
