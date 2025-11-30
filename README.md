@@ -188,7 +188,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="1236" height="262" alt="screenshot-2025-11-28_21-48-35" src="https://github.com/user-attachments/assets/88b6f0c6-84a0-4c5e-88ae-dd79659a0ece" />
 
 ## Screenshot V4.4
-- just an "optimized" adjust of V4.3 and integration of modules in workspaces <br>
+- just an "optimized" adjustment of V4.3 modules (integration of modules in workspaces) <br>
 ##### V4.4 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V4.4/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
