@@ -25,7 +25,6 @@
     "bluetooth",
     "pulseaudio",
     "network",
-    "memory",
     "cpu",
     "battery",
     "custom/omarchy"
@@ -191,11 +190,6 @@
     "exec": "wttrbar --nerd --location yourlocation",
     "return-type": "json"
   },
-  "memory": {
-    "interval": 2,
-    "format": "{percentage}%  ",
-    "on-click": "omarchy-launch-or-focus-tui btop"
-  },
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "omarchy-launch-or-focus-tui wiremix",
@@ -223,7 +217,7 @@
     ]
   },
   "custom/expand-icon": {
-    "format": "󱞨 ",
+    "format": "",
     "tooltip": false
   },
   "tray": {

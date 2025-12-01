@@ -125,7 +125,6 @@ tooltip {
 #backlight,
 #bluetooth,
 #pulseaudio,
-#memory,
 #custom-omarchy,
 #custom-weather,
 #custom-update,
@@ -281,7 +280,6 @@ animation: repeat;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: @background;
    margin-left: 1px;
    margin-right: 1px;
  }
