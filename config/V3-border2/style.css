@@ -99,12 +99,13 @@ font-size: 14px;
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 14px;
-  margin: 0 7.5px;
+  margin: 0 5.5px;
 }
 
 #custom-expand-icon {
   margin-right: 6px;
 }
+
 
 tooltip {
   padding: 0.5px;

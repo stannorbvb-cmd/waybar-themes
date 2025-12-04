@@ -5,7 +5,7 @@
   "mod": "dock",
   "height": 6,
   "margin-top": 1,
-  "width": 900,
+  "width": 950,
   "margin-bottom": 0,
   "modules-left": [
     "custom/omarchy",
@@ -56,7 +56,7 @@
   },
   "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 25,
+    "max-length": 35,
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
       "(.*?) - Chromium - chromium": "  $1 ",
@@ -100,14 +100,14 @@
     "interval": 3600
   },
   "custom/updatespacman": {
-    "format": "{icon}",
+    "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
       "has-updates": " 󰏖",
-      "updated": " 󰂪"
+      "updated": "",
     },
     "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
+    "exec": "waybar-module-pacman-updates --no-zero-output"
   },
   "backlight": {
     "device": "intel_backlight",
