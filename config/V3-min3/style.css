@@ -52,7 +52,6 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 }
 
 .modules-right {
-  border: 2px solid alpha(@foreground, 0.75);
   border-radius: 6;
   text-shadow: 0px 0px 2px alpha(@foreground, 0.25);
   font-size: 12px;
