@@ -161,7 +161,8 @@ omarchy-restart-waybar
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1019" height="428" alt="screenshot-2025-12-05_00-23-46" src="https://github.com/user-attachments/assets/d9556c85-1858-4f52-a635-1c9b7f1cd05b" />
+<img width="1419" height="549" alt="screenshot-2025-12-05_07-10-48" src="https://github.com/user-attachments/assets/51201870-eab8-4a5c-aaef-4030d1a43b2f" />
+
 
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
