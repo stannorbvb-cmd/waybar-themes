@@ -150,7 +150,7 @@ tooltip {
 /* --- General Modules --- */
 
 #tray,
-#tray-expander,
+#group-tray-expander,
 #mpris,
 #cpu,
 #clock,
@@ -198,10 +198,10 @@ tooltip {
 
 /* Specific Module */
 
-#tray-expander {
+#group-tray-expander {
   padding: 0px;
   margin-right: 0px;
-  background-color: @background;
+  background-color: alpha(@background, 0.9);
   color: @foreground;
 }
 
