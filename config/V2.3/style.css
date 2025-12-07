@@ -198,6 +198,9 @@ tooltip {
 }
 
 /* Specific Module */
+#clock {
+  margin-left: 2px;
+}
 
 #group-tray-expander {
   padding: 2px;
