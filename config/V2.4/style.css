@@ -242,8 +242,6 @@ tooltip {
  border: 1px solid alpha(@foreground, 0.8);
  border-radius: 8px;
  box-shadow: 1px 1px 3px 1px #131313;
- font-size: 12px;
- 
 }
 tooltip label {
     color: @foreground;
