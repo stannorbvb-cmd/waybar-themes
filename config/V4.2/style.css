@@ -29,7 +29,7 @@ window#waybar.empty #window{
     border: 1.5px solid rgba(255, 255, 255, 0.25);
     border-radius: 10px;
     margin: 0px 8px 4px 8px;
-    background-color: alpha(@background, 0.9);
+    background-color: alpha(@background, 1);
     box-shadow: 1px 1px 3px 1px #101010;
     transition-property: background-color;
     transition-duration: .5s;
