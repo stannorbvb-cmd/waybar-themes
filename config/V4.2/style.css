@@ -82,7 +82,7 @@ window#waybar.empty #window{
   margin: 0;
   opacity: 0.75;
   color: @foreground;
-  border-bottom: 1.5pt solid transparent;
+  border-bottom: 2pt solid transparent;
 }
 
 #workspaces button.active {
@@ -90,7 +90,7 @@ window#waybar.empty #window{
     opacity: 1.0;
     padding: 0;
     margin: 0;
-    border-bottom: 1.5pt solid @foreground;
+    border-bottom: 2pt solid @foreground;
     font-size: 18px;
     transition: all 0.15s ease-in-out;
 }
