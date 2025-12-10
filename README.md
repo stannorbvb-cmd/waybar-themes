@@ -80,6 +80,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1920" height="405" alt="screenshot-2025-12-07_08-18-00" src="https://github.com/user-attachments/assets/d36b5b2e-3f39-46ca-8d64-90f22da6cea7" />
 
+## Screenshots V2.5
+- black background with jap workspace buttons <br>
+##### V2.5 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="413" alt="screenshot-2025-12-10_23-15-02" src="https://github.com/user-attachments/assets/10515e65-5099-4285-96b0-fa9567a03f51" />
+
 
 ## Screenshots V3
 - new waybar Style (without red accents)
