@@ -82,6 +82,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 ## Screenshots V2.5
 - black background with jap workspace buttons <br>
+- Base config of V2.4 & V4.2 with in combination of workspace button from hyprdots of [sofyan-rs](https://github.com/sofyan-rs/hyprdots)
 ##### V2.5 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
