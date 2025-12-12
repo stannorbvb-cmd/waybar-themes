@@ -177,13 +177,13 @@ background-color: #27272a;
 tooltip {
  padding: 4px;
  background: #27272a;
- border: 1px solid alpha(@foreground, 0.8);
+ border: 1px solid alpha(#e6d8ba, 0.8);
  border-radius: 8px;
  box-shadow: 1px 1px 3px 1px #131313;
  font-size: 12px;
 }
 tooltip label {
-    color: @foreground;
+    color: #e6d8ba;
     font-weight: normal;
 }
 
