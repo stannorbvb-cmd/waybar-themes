@@ -69,7 +69,7 @@ button:hover {
 
 #workspaces button.active {
   background-color: #ff9b71;
-  color: @background;
+  color: #000;
 }
 
 #workspaces button.empty {
