@@ -88,6 +88,10 @@ tooltip {
   margin-left: -2px;
 }
 
+#pulseaudio {
+  margin: 0 5px;
+}
+
 #tray {
     background-color: @transparent;
     margin: 0 7.5px;
