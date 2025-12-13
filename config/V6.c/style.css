@@ -60,6 +60,8 @@ padding-bottom: 0px;
  opacity: 1.0;
 }
 
+
+
 #tray,
 #mpris,
 #cpu,
@@ -81,9 +83,15 @@ tooltip {
 
 #idle_inhibitor, #custom-updatespacman, #custom-update, #custom-screenrecording-indicator, #clock {
   margin: 0 7.5px;
-  padding: 0 2px;
+  padding: 0 3px;
   font-size: 12px;
+  min-width: 12px;
 }
+
+#clock {
+  margin: 0 1px;
+}
+
 #network, #battery {
   margin-left: -2px;
 }
@@ -94,7 +102,7 @@ tooltip {
 
 #tray {
     background-color: @transparent;
-    margin: 0 7.5px;
+    margin: 0 1px;
 }
 
 #tray > .passive {
