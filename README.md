@@ -296,6 +296,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1566" height="443" alt="screenshot-2025-12-11_22-02-28" src="https://github.com/user-attachments/assets/01b0a58c-85c1-4887-8f77-144b63b94d51" />
 
+## Screenshot V6.c 
+- base config V6.b with new Style for ex. "pacman" workspace <br>
+##### V6.c Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.c/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="415" alt="screenshot-2025-12-13_17-23-45" src="https://github.com/user-attachments/assets/29d872d0-1e87-4b61-b571-6255b05dcafd" />
 
 
 
