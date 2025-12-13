@@ -75,7 +75,7 @@
   },
   "cpu": {
     "interval": 2,
-    "format": "{usage}% 󰍛",
+    "format": "{usage}% 󰍛 ",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
     "memory": {
