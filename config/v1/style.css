@@ -106,6 +106,14 @@ window#waybar.empty #window {
   color: @rd1;
   margin: 1px 8px 2px 0px;
 }
+#window{
+  padding: 0 5px;
+  background: @bg;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0px @ia1;
+  margin: 1px 8px 2px 0px;
+  color: @fg;
+}
 
 /* --- General Modules --- */
 
@@ -115,18 +123,19 @@ window#waybar.empty #window {
 #cpu,
 #battery,
 #network,
+#custom-updatespacman,
 #temperature,
 #bluetooth,
 #pulseaudio,
 #custom-weather,
 #custom-update,
+#custom-screenrecording-indicator,
 #clock {
   min-width: 12px;
-  padding: 0 8px;
-  margin: 0 0px;
+  padding: 0 5px;
+  margin: 0 2px;
   
 }
-
 
 /* --- Right module Hover color --- */
 #cpu:hover,
@@ -186,4 +195,29 @@ tooltip label {
 
 .hidden {
   opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+    font-size: 12px;
+    padding: 0 2px;
+    margin: 2px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #eb7087;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @background;
+    }
 }

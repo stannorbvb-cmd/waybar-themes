@@ -8,8 +8,8 @@
   "margin-top": 1,
   "margin-right": 0,
   "maring-left": 0,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces", "cava", "mpris"],
-  "modules-center": ["clock", "custom/weather", "custom/update"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window", "cava", "mpris"],
+  "modules-center": ["clock", "custom/weather", "custom/screenrecording-indicator", "custom/update", "custom/updatespacman"],
   "modules-right": [
     "group/tray-expander",
     "temperature",
@@ -48,6 +48,12 @@
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
+  "hyprland/window": {
+	"format": "<span  weight='bold' >{class}</span>",
+  "max-length": 15,
+  "icon": true,
+	"icon-size": 14
+  },
   "custom/update": {
     "format": "",
     "exec": "omarchy-update-available",
@@ -55,6 +61,16 @@
     "tooltip-format": "Omarchy update available",
     "signal": 7,
     "interval": 3600
+  },
+    "custom/updatespacman": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": "󱍷",
+        "updated": "󰂪"
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
   },
   "cpu": {
     "interval": 2,
@@ -225,5 +241,11 @@
           ""  // Icon: temperature-full
   ],
     "tooltip": true
+  },
+    "custom/screenrecording-indicator": {
+    "on-click": "omarchy-cmd-screenrecord",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
+    "signal": 8,
+    "return-type": "json"
   },
 }
