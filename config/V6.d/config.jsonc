@@ -127,7 +127,7 @@
       "󰤨"
     ],
     "format": "{icon}",
-    "format-wifi": "{signalStrength}% {icon}",
+    "format-wifi": "{icon}",
     "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
