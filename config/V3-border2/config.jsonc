@@ -109,9 +109,10 @@
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
   },
-  "backlight": {
+   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
