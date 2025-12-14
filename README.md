@@ -14,7 +14,8 @@ Everything else is optional add-ons, such as the waybar-pacman module to display
 ```
     
 ## Screenshots V1
-- No hyprland/window / pacman/update module / no screenrecord button stop <br>
+- first creation of my own Waybar config <br>
+- include weather, mpris, hyprland/window / pacman/update module / screenrecord button stop <br>
 ##### V1 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/v1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
