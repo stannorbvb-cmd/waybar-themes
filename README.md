@@ -298,6 +298,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1568" height="501" alt="screenshot-2025-12-14_11-36-29" src="https://github.com/user-attachments/assets/19b20a7e-971e-451b-8a66-bc7ca30a760d" />
 
+## Screenshot V6.e
+- added shadow box and slightly higher 
+##### V6.e Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.e/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1529" height="467" alt="screenshot-2025-12-14_21-55-32" src="https://github.com/user-attachments/assets/4ec7f9c9-ec3b-4697-b566-7d30bc72ea02" />
+
+
 
 
 
