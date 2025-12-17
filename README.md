@@ -158,6 +158,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ## Screenshots V3 (min2-cava)
 - minimal setup (memory, tempature, hyprland/window are excluded)
 - mpris support , cava support, bluetooth and gtk icons out of tray box
+- Thanks [Ankur](https://github.com/ankur311sudo) for his cava script 
 
 ###### STEP1
 - use the following V3-min2-cava Install command for waybar config
