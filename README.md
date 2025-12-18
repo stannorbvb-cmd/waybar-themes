@@ -52,7 +52,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="2560" height="469" alt="screenshot-2025-12-18_21-55-30" src="https://github.com/user-attachments/assets/0d994f4f-4b07-4fca-8f22-84f010ba1687" />
 
 ## Screenshots V2.2
-- new version of V1 to V2 series configs with some extras <br>
+- multiple groups creations <br>
 ###### STEP1
 - install wttrbar for weather module
 ```bash
