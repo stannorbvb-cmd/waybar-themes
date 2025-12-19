@@ -125,7 +125,7 @@ window#waybar.empty #window{
 }
 
 #custom-expand-icon {
-  margin-right: 4px;
+  margin-right: 0px;
 }
 
 tooltip {
