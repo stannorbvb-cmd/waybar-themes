@@ -12,21 +12,18 @@
 
 
 window#waybar  {
-  background-color: @background;
+  background-color: transparent;
   color: @foreground;
-  transition-property: background-color;
-  transition-duration: .5s;
-  border: 2px solid alpha(@foreground, 0.75);
-  border-radius: 6px;
 }
 
-
-#window {
-  text-shadow: 0px 0px 2px alpha(@foreground, 0.6);
-  margin: 0;
-  padding: 0;
-  padding-top: 0px;
-  font-size: 8px;
+#waybar > box {
+  border-radius: 5px;
+  border: 0px solid rgba(255, 255, 255, 0.0);
+  margin: 0px 8px 3px 8px;
+  background-color: @background;
+  box-shadow: 1px 1px 3px 1px #101010;
+  transition-property: background-color;
+  transition-duration: .5s;
 }
 
 #custom-omarchy {
@@ -35,8 +32,7 @@ padding-top: 1px;
 font-size: 16px;
 }
 
-
-.modules-left {
+#left1 {
 border: 2px solid alpha (@foreground, 0.75);
 background: alpha(@background, 0.2);
 border-radius: 6px;
@@ -44,11 +40,19 @@ opacity: 0.95;
 text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 }
 
+#right1 {
+  margin-right: 8px;
+}
+
+.modules-left {
+ font-size: 12px;
+}
+
 .modules-center {
   border-radius: 0;
   text-shadow: 0px 0px 2px alpha(@foreground, 0.25);
   font-size: 12px;
-  padding: 0 60px;
+  padding: 0px;
 }
 
 .modules-right {
@@ -87,6 +91,12 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
     font-size: 12px;
     transition: all 0.15s ease-in-out;
 }
+#workspaces button.empty.active {
+  background-color: alpha(@foreground, 0.9);
+  color: @background;
+  opacity: 1;
+
+}
 
 #workspaces button:hover {
     color: @foreground;
@@ -106,10 +116,9 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 }
 
 
-
-
 #custom-weather,
 #hyprland-window,
+#window,
 #clock,
 #tray,
 #cpu,
@@ -126,8 +135,10 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 12px;
-  margin: 0 7.25px;
+  min-width: 14px;
+  margin: 1px 4px 1px 4px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #custom-update {
@@ -137,16 +148,6 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 
 .hidden {
   opacity: 0;
-}
-
-#clock {
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-#custom-weather {
-  margin-right: 0px;
-  padding-right: 0px;
 }
 
 #taskbar {
@@ -165,8 +166,7 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 }
 
 #custom-expand-icon {
-  margin-right: 6px;
-  margin-left: 9px;
+  margin-right: 8px;
 }
 
 #tray {
@@ -200,12 +200,6 @@ tooltip label {
 }
 
 #custom-screenrecording-indicator {
-    font-size: 12px;
-    padding: 0px;
-    margin: 2px;
-}
-
-#custom-screenrecording-indicator {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -224,36 +218,7 @@ tooltip label {
     }
 }
 
-@keyframes blink-inhibitor {
-    to {
-        color: @background;
-    }
-}
-
-#idle_inhibitor {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  color: @foreground;
-}
-
-#idle_inhibitor.activated {
-  color: #077B66;
-  animation-name: blink-inhibitor;
-  animation-duration: 1s;
-}
-
-@keyframes blink {
-    to {
-        color: #4a4a4a;
-        
-    }
-}
-
 #mpris{
-padding-top: 2px;
-margin-left: 8px;
-font-size: 12px;
 color: alpha(@foreground, 0.95);
 animation: repeat;
 	animation-name: blink;
@@ -261,4 +226,30 @@ animation: repeat;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #178b76;
+}
+
+#battery.warning {
+  color: #c95d0f;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

@@ -7,22 +7,21 @@
   "margin-top": 1,
   "width": 1200,
   "modules-left": [
-    "custom/omarchy",
-    "hyprland/workspaces",
-    "wlr/taskbar"
+    "group/left1",
+    "hyprland/window"
   ],
   "modules-center": [
-    "mpris",
     "clock",
-    "custom/weather"
+    "custom/weather",
+    "custom/screenrecording-indicator"
 
   ],
   "modules-right": [
+    "group/right1",
     "group/tray-expander",
     "idle_inhibitor",
     "custom/updatespacman",
     "custom/update",
-    "custom/screenrecording-indicator",
     "bluetooth",
     "backlight",
     "network",
@@ -31,6 +30,20 @@
     "cpu",
     "battery"
   ],
+  "group/left1": {
+    "orientation": "inherit",
+    "modules": [
+    "custom/omarchy",
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ]
+  },
+    "group/right1": {
+    "orientation": "inherit",
+    "modules": [
+    "mpris"
+  ]
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "disable-scroll": false,
@@ -56,28 +69,28 @@
       "5": []
     }
   },
-  "hyprland/window": {
+   "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 25,
+    "max-length": 20,
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
-      "(.*?) - Chromium - chromium": "  $1 ",
-      "(.*chrome)...(.*)": "  $1 ",
-      "(.*) - Obsidian - .* - obsidian": "  $1 ",
-      "(.*nvim)...(.*)": "  $2 ",
-      "(.*code) - (.*)": " 󰨞 $1 ",
-      "^.*btop( .*|$)": " 󰧨 BTOP $1 ",
+      "(.*?) - Chromium - chromium": "   $1 ",
+      "(.*chrome)...(.*)": "   $1 ",
+      "(.*) - Obsidian - .* - obsidian": "   $1 ",
+      "(.*nvim)...(.*)": "   $2 ",
+      "(.*code) - (.*)": " 󰨞  $1 ",
+      "^.*btop( .*|$)": " 󰧨 BTOP $1",
       "^.*cmatrix( .*|$)": " 󰘨 MATRIX $1 ",
       "(.*) - Spotify": "  $1 ",
       "(.*) - com.mitchellh.ghostty": " 󰊠 $1 ",
       "(.*) - Alacritty": "   $1 ",
       "(.*) - BeeperTexts": " 󰻞  $1 ",
-      "(.*Discord)...(.*).. (.*)": "  $2 ",
-      "(.*) - org.gnome.Nautilus": " 󰣆 $1 ",
-      "(.*) - fish": "  [$1] ",
-      "(.*Steam)...(.*)": "  $1 ",
-      "(.*imv)...(.*).. (.*)": "  $2 ",
-      "(.*) - com.obsproject.Studio": "  $1 "  
+      "(.*Discord)...(.*).. (.*)": "   $2 ",
+      "(.*) - org.gnome.Nautilus": " 󰣆  $1 ",
+      "(.*) - fish": "   [$1] ",
+      "(.*Steam)...(.*)": "   $1",
+      "(.*imv)...(.*).. (.*)": "   $2",
+      "(.*) - com.obsproject.Studio": "  $1 "
     }
   },
   "wlr/taskbar": {
@@ -122,7 +135,8 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
@@ -133,7 +147,7 @@
   },
   "clock": {
     "format": " {:%H:%M %a}",
-    "format-alt": "{:%A  |  %H:%M  |  %e %B}",
+    "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
       "mode": "month",
@@ -145,7 +159,7 @@
         "today": "<span color='#ff6699'><b>{}</b></span>"
       }
     },
-    "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
+     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "network": {
     "format-icons": [
@@ -167,10 +181,10 @@
     "on-click": "omarchy-launch-wifi"
   },
   "battery": {
-    "format": "{icon} {capacity}%",
-    "format-discharging": "{icon} {capacity}%",
-    "format-charging": "{icon} {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{capacity}% {icon}",
+    "format-charging": "{capacity}% {icon}",
+     "format-plugged": " {capacity}%",
     "format-icons": {
       "charging": [
         "󰢜",
@@ -197,11 +211,10 @@
         "󰁹"
       ]
     },
-    "format-full": "󰂅 {capacity}%",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {timeTo}",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {timeTo}",
     "interval": 5,
-    "on-click": "omarchy-menu power",
     "states": {
       "warning": 20,
       "critical": 10
@@ -230,20 +243,17 @@
     }
   },
   "mpris": {
-    "format": "{player_icon}",
-    //"format": "{player_icon} {artist} - {title}",
-    "format-paused": "{status_icon}",
-    "tooltip-format": "{dynamic}",
+    "format": "󰋎 {artist}-{title}",
+    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
+    "max-length": 30,
     "player-icons": {
-      "default": "",
-      "mpv": "",
-      "termusic": ""
+      "default": "⏸",
+      "mpv": "🎵"
     },
     "status-icons": {
-      "paused": ""
-    },
-    "on-click": "playerctl play-pause",
-    "max-length": 20
+      "paused": "󰋐"  
+    }
+    // "ignored-players": ["firefox"]
   },
   "idle_inhibitor": {
     "format": "{icon}",
