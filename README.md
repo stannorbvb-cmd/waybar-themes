@@ -239,8 +239,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V5.b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1520" height="42" alt="screenshot-2025-11-14_14-34-00" src="https://github.com/user-attachments/assets/871f25a4-dc74-4e0b-a321-f73a2cd148bd" />
-<img width="1920" height="1080" alt="screenshot-2025-11-14_23-18-39" src="https://github.com/user-attachments/assets/7e92e1c3-3d09-40d7-9703-95d7b21a14f1" />
+<img width="1518" height="396" alt="screenshot-2025-12-19_20-24-26" src="https://github.com/user-attachments/assets/5e54da2b-06e9-4afe-852f-2d6de6307949" />
+
 
 ## Screenshot V5.c
 - added border, "boxed out" center and right module to catch up with workspace style<br>
