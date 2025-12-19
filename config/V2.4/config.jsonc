@@ -3,11 +3,11 @@
   "layer": "top",
   "position": "top",
   "mod": "dock",
-  "margin-top": 0,
+  "margin-top": 1,
   "height": 27,
   "margin-left": 5,
   "margin-right": 5,
-  "margin-bottom": 0,
+  "margin-bottom": 2,
 
 
 "group/left1": {
@@ -83,7 +83,7 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": " 󰏖",
+      "has-updates": " 󰏖 ",
       "updated": ""
     },
     "exec-if": "which waybar-module-pacman-updates",
@@ -124,8 +124,8 @@
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
-    "format": "  {:%H:%M %a}",
-    "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+    "format": " {:%H:%M %a}",
+    "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
       "mode": "month",
@@ -143,8 +143,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": " ",
+      "deactivated": " "
     }
   },
   "network": {
@@ -169,8 +169,8 @@
   "battery": {
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{icon}",
-    "format-plugged": "{power}",
+    "format-charging": "{capacity}% {icon}",
+    "format-plugged": " {capacity}%",
     "format-icons": {
       "charging": [
         "󰢜",
@@ -197,10 +197,11 @@
         "󰁹"
       ]
     },
-    "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "format-full": "󰂅 {capacity}%",
+    "tooltip-format-discharging": "{timeTo}",
+    "tooltip-format-charging": "{timeTo}",
     "interval": 5,
+    "on-click": "omarchy-menu power",
     "states": {
       "warning": 20,
       "critical": 10
@@ -216,7 +217,8 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
