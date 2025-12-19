@@ -37,7 +37,7 @@ window#waybar {
   border-radius: 0;
   border-left: 1px solid alpha(@foreground, 0.2);
   border-right: 1px solid alpha(@foreground, 0.2);
-  padding: 0 80px;
+  padding: 0 20px;
 }
 
 
@@ -52,19 +52,16 @@ window#waybar {
   opacity: 0.5;
 }
 
-#window {
-  padding-left: 8px;
-  padding-right: 64px;
-  padding: 2px;
-}
-
 #hyprland-window,
+#window,
 #tray,
 #cpu,
 #memory,
+#mpris,
 #battery,
 #network,
 #bluetooth,
+#clock,
 #pulseaudio,
 #idle_inhibitor,
 #custom-omarchy,
@@ -73,11 +70,17 @@ window#waybar {
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
-  margin: 0 7.5px;
+  margin: 1px 4px 1px 4px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 #custom-expand-icon {
-  margin-right: 7px;
+  margin-right: 2px;
+}
+
+#tray-expander {
+  margin-left: 0px;
 }
 
 tooltip {
@@ -85,28 +88,29 @@ tooltip {
 }
 
 
-#custom-update {
-  font-size: 10px;
-  margin: 2px;
-}
-
-#clock, #idle_inhibitor {
-  margin-left: 8.75px;
-}
-
 .hidden {
   opacity: 0;
 }
 
 #custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
 }
 
 #custom-screenrecording-indicator.active {
-  color: #a55555;
+  color: #eb7087;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
 }
+
+@keyframes blink-recording {
+    to {
+        color: @background;
+    }
+}
+
 
 tooltip {
  padding: 4px;
@@ -117,4 +121,46 @@ tooltip {
 }
 tooltip label {
     color: @foreground;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #178b76;
+}
+
+#battery.warning {
+  color: #c95d0f;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#mpris {
+color: alpha(@foreground, 0.95);
+animation: repeat;
+	animation-name: blink3;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink3 {
+    to {
+        color: #4a4a4a;
+    }
 }
