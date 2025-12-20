@@ -197,11 +197,6 @@ animation: repeat;
     }
 }
 
-#battery.charging,
-#battery.plugged {
-  color: #178b76;
-}
-
 #battery.warning {
   color: #c95d0f;
 }
