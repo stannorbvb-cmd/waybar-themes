@@ -159,7 +159,7 @@ window#waybar.empty #window{
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
-  margin: 0px 3px 0px 3px;
+  margin: 0px 1px 0px 1px;
   padding: 0 4px;
 }
 
