@@ -39,7 +39,7 @@ tooltip {
 
 #left1{
   border-radius: 26px;
-  border: 2px solid alpha(@foreground, 0.3);
+  border: 1px solid alpha(@foreground, 0.3);
   margin: 0px 8px 3px 8px;
   background-color: @background;
   box-shadow: 1px 1px 3px 1px #101010;
@@ -49,7 +49,7 @@ tooltip {
 
 #left2{
   border-radius: 26px;
-  border: 2px solid alpha(@foreground, 0.3);
+  border: 1px solid alpha(@foreground, 0.3);
   margin: 0px 8px 3px 8px;
   background-color: @background;
   box-shadow: 1px 1px 3px 1px #101010;
@@ -65,7 +65,7 @@ tooltip {
 
 .modules-center {
   border-radius: 26px;
-  border: 2px solid alpha(@foreground, 0.3);
+  border: 1px solid alpha(@foreground, 0.3);
   margin: 0px 8px 3px 8px;
   background-color: @background;
   box-shadow: 1px 1px 3px 1px #101010;
@@ -75,7 +75,7 @@ tooltip {
 
 .modules-right {
    border-radius: 26px;
-  border: 2px solid alpha(@foreground, 0.3);
+  border: 1px solid alpha(@foreground, 0.3);
   margin: 0px 8px 3px 8px;
   background-color: @background;
   box-shadow: 1px 1px 3px 1px #101010;
