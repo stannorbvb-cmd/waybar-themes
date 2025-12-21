@@ -84,7 +84,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="390" alt="screenshot-2025-12-10_23-40-32" src="https://github.com/user-attachments/assets/a12ab1d9-0119-4766-ab27-6289937ad2da" />
 
-
+## Screenshots V2.6
+- shadowbox version of V2.3 
+##### V2.6 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1920" height="375" alt="screenshot-2025-12-21_01-36-53" src="https://github.com/user-attachments/assets/89c69608-e1d0-4051-a742-e5c3f4b55827" />
 
 
 ## Screenshots V3
