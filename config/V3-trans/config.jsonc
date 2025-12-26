@@ -93,7 +93,8 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
@@ -103,14 +104,14 @@
     ]
   },
   "custom/updatespacman": {
-    "format": "{icon}",
+    "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": "󱍷",
-      "updated": "󰂪"
+      "has-updates": " 󰏖",
+      "updated": ""
     },
     "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
+    "exec": "waybar-module-pacman-updates --no-zero-output"
   },
   "cpu": {
     "interval": 2,
