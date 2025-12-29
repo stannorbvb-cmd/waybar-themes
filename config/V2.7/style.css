@@ -219,6 +219,7 @@ tooltip label {
 
 #battery.warning {
   color: #c95d0f;
+  background-color: transparent;
 }
 
 @keyframes blink2 {
