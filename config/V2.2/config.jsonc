@@ -182,7 +182,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{icon}",
-    "format-plugged": "{power}",
+    "format-plugged": "",
     "format-icons": {
       "charging": [
         "󰢜",
