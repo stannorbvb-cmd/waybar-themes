@@ -194,6 +194,7 @@ font-size: 14px;
 
 #custom-screenrecording-indicator.active {
   color: #eb7087;
+  background: @background;
   animation-name: blink-recording;
   animation-duration: 0.5s;
 }
@@ -238,17 +239,18 @@ animation: repeat;
 
 #battery.warning {
   color: #c95d0f;
+   background: @background;
 }
 
 @keyframes blink2 {
   to {
-    background-color: transparent;
+    background: @background;
     color: #f53c3c;
   }
 }
 
 #battery.critical:not(.charging) {
-  background-color: transparent;
+  background: @background;
   color: #e6d8ba;
   animation-name: blink2;
   animation-duration: 0.5s;
