@@ -242,7 +242,7 @@ margin-top: 0px;
 
 #battery.warning {
   color: #c95d0f;
-  background-color: transparent;
+  background-color: alpha(@background, 0.9);
 }
 
 @keyframes blink2 {
