@@ -29,13 +29,6 @@ window#waybar.empty #window {
   opacity: 0;
 }
 
-/* --- Custom Modules ---*/
-
-.modules-center {
-    min-width: 880px;
-    margin-left: 300px;
-}
-
 /* --- Tooltip ---*/
 tooltip {
   opacity: 1;
@@ -76,7 +69,6 @@ tooltip {
 /* --- General Modules --- */
 
 #tray,
-#custom-trayicon,
 #window,
 #mpris,
 #cpu,
@@ -92,7 +84,6 @@ tooltip {
 #custom-update,
 #idle_inhibitor,
 #custom-omarchy,
-#not-power,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 18px;
@@ -109,12 +100,12 @@ tooltip {
 #power-profiles-daemon.performance,
 #power-profiles-daemon.balanced,
 #power-profiles-daemon.power-saver {
-font-size: 15px;
+font-size: 13.5px;
 padding-left: 3px;
+
 }
 
-#network,
-#pulseaudio {
+#network {
   padding-left: 3px;
 }
 
@@ -122,19 +113,19 @@ padding-left: 3px;
   padding-right: 3px;
 }
 
-#custom-trayicon {
-  font-size: 15px;
+#pulseaudio.output {
+  padding-right: 8px;
 }
 
-#backlight {
+#custom-omarchy {
   font-size: 11px;
 }
 
 /* --- Hover right module  --- */
 #clock:hover,
-#custom-trayicon:hover,
+#tray:hover,
+#custom-expand-icon:hover,
 #cpu:hover,
-#not-power:hover,
 #memory:hover,
 #window:hover,
 #mpris:hover,
@@ -160,6 +151,10 @@ padding-left: 3px;
 
 /* Specific Module */
 
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: @transparent;
@@ -183,16 +178,6 @@ tooltip label {
     font-weight: normal;
 }
 
-
-/* --- Warnings --- */
-#cpu.critical,
-#memory.critical,
-#battery.warning,
-#battery.critical,
-#battery.urgent {
-    background-color: transparent;
-    color: #fe8019;
-}
 
 /* Specific animation Module */
 
@@ -222,7 +207,8 @@ tooltip label {
 
 @keyframes blink-recording {
     to {
-        color: @background;
+        color: @foreground;
+        background-color: alpha(@background, 0.85);
     }
 }
 
@@ -231,12 +217,7 @@ tooltip label {
 @keyframes blink {
     to {
         color: #4a4a4a;
-    }
-}
-
-@keyframes blink-inhibitor {
-    to {
-        color: @background;
+        
     }
 }
 
