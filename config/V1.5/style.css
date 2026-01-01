@@ -1,14 +1,13 @@
 @import "../omarchy/current/theme/waybar.css";
 @define-color bg @background;
 @define-color fg @foreground;
-@define-color rd1 #ff9b71;
 @define-color ia1 #101010;
 
 * {
 
   border-radius: 1px;
   font-family: 'JetBrainsMono Nerd Font Propo';
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   min-height: 0;
   }
@@ -30,33 +29,28 @@ window#waybar.empty #window {
 }
 
 /* --- Modules --- */
-.modules-left {
-  margin-left: 5px;
-}
 
 .modules-center {
   background: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 0px 8px 0px;
   border-radius: 2px;
   padding: 0px;
  }
 
 #right {
-  margin-right: 5px;
   background: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
   border-radius: 2px;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 0px;
   padding: 0px;
 }
 
 #right1 {
-  margin-right: 5px;
   background: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
   border-radius: 2px;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 0px;
   padding: 0px;
 }
 
@@ -65,7 +59,7 @@ window#waybar.empty #window {
   background: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
   border-radius: 2px;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 4px;
   padding: 0px;
 }
 
@@ -73,7 +67,7 @@ window#waybar.empty #window {
 #workspaces {
   background-color: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 0px;
   border-radius: 2px;
 }
 
@@ -104,23 +98,11 @@ window#waybar.empty #window {
   opacity: 1;
 }
 
-#workspaces button:first-child {
-  border-radius: 1px 0 0 1px;
+#workspaces button:hover {
+    background-color: @fg;
+    color: @bg;
+    opacity: 1;
 }
-
-#workspaces button:last-child {
-  border-radius: 0 1px 1px 0;
-}
-
-#workspaces button:first-child:last-child {
-  border-radius: 1px;
-}
-
-#workspaces button.urgent {
-  color: red;
-  background-color: yellow;
-}
-
 
 
 /* --- Custom Color+Shdow Omarchy --- */
@@ -130,14 +112,14 @@ window#waybar.empty #window {
   background-color: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
   color: @fg;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 4px;
 }
 #window{
   padding: 0 5px;
   background: @bg;
   border-radius: 2px;
   box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 4px 8px 6px 0px;
+  margin: 4px 4px 8px 0px;
   color: @fg;
 }
 
@@ -160,23 +142,35 @@ window#waybar.empty #window {
 #custom-update,
 #custom-screenrecording-indicator,
 #clock {
-  min-width: 12px;
-  padding: 0 5px;
-  margin: 0 2px;
+  min-width: 14px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0 2px 0 2px;
   
 }
 
 /* --- Right module Hover color --- */
+#clock:hover,
 #cpu:hover,
 #memory:hover,
-#battery:hover,
-#backlight:hover,
+#window:hover,
+#mpris:hover,
 #temperature:hover,
+#battery:hover,
+#power-profiles-daemon:hover,
 #bluetooth:hover,
+#backlight:hover,
+#custom-omarchy:hover,
+#custom-weather:hover,
+#custom-update:hover,
+#idle_inhibitor:hover,
+#custom-screenrecording-indicator,
+#custom-updatespacman:hover,
 #network:hover,
 #pulseaudio:hover {
- background-color: @rd1;
- color: @bg;
+  background-color: @fg;
+  color: @bg;
+  border-radius: 2px;
 }
 
 tooltip {
@@ -198,16 +192,8 @@ tooltip label {
 
 /* Specific Module */
 
-
-
 .hidden {
   opacity: 0;
-}
-
-#custom-screenrecording-indicator {
-    font-size: 10px;
-    padding: 0 2px;
-    margin: 2px;
 }
 
 #custom-screenrecording-indicator {
