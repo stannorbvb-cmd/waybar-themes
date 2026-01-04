@@ -134,7 +134,7 @@
     "class<dev.zed.Zed>": "󰵁",
 		"class<codeblocks>": "󰅩",
 		"title<.*github.*>": "",
-		"class<mousepad>": " ",
+		"class<mousepad>": "",
 		"class<libreoffice-writer>": "",
 		"class<libreoffice-startcenter>": " 󰏆",
 		"class<libreoffice-calc>": "",
