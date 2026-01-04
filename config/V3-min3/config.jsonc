@@ -6,7 +6,7 @@
   "height": 24,
   "width": 1440,
   "modules-left": [
-    "group/left1",
+    "group/left1"
   ],
   "modules-center": [
     "clock",
@@ -145,7 +145,7 @@
 		"class<android-studio>": "",
    	"class<org.pipewire.Helvum>": "󰓃",
     "class<localsend>":"",
-    "class<PrusaSlicer|UltiMaker-Cura|OrcaSlicer>": "󰹛",
+    "class<PrusaSlicer|UltiMaker-Cura|OrcaSlicer>": "󰹛"
 		}
 	},
    
@@ -296,7 +296,7 @@
     "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
     "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
-    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%"
 },
 "pulseaudio#output": {
     "format": "{icon}",
