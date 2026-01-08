@@ -68,7 +68,7 @@ omarchy-restart-waybar
 ```
 <img width="2560" height="528" alt="screenshot-2026-01-08_19-34-26" src="https://github.com/user-attachments/assets/9fcac4e6-e005-41e7-84fc-df9047befaed" />
 
-## Screenshots V2.ba
+## Screenshots V2.1b
 - New Oxocarbon Waybar style with static colors (long-bar version) - Thanks to Astraeya for his window-script!
 ##### V2.1b Install-command (copy and paste in your terminal): <br>
 ###### STEP1
