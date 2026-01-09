@@ -13,6 +13,7 @@
     "orientation": "inherit",
     "modules": [
       "custom/omarchy",
+      "custom/voxtype",
       "idle_inhibitor",
       "custom/screenrecording-indicator",
       "custom/updatespacman",
@@ -79,6 +80,19 @@
     "tooltip-format": "Omarchy update available",
     "signal": 7,
     "interval": 21600
+  },
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
   },
    "custom/updatespacman": {
     "format": "{}{icon}",

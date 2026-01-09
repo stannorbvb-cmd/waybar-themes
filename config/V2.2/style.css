@@ -216,6 +216,15 @@ tooltip {
   opacity: 0;
 }
 
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
 tooltip {
  padding: 4px;
  background: @background;
