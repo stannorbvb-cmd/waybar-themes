@@ -167,11 +167,11 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="1310" height="209" alt="screenshot-2025-11-07_12-03-43" src="https://github.com/user-attachments/assets/852ce3fe-f2d0-4b2b-b7da-3ad0e4b79e4c" />
 
 
-## Screenshots V3 (shadow)
+## Screenshots V3.1 (shadow)
 - all shadow , waybar and tooltip
 ##### V3-shadow Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-shadow/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3.1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 <img width="1307" height="209" alt="screenshot-2025-11-07_11-41-49" src="https://github.com/user-attachments/assets/1b804243-5249-4181-bcc1-558be83d8e18" />
 
