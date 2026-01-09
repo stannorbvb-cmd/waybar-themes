@@ -289,7 +289,3 @@ animation: repeat;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-#custom-voxtype.recording {
-  color: #a55555;
-}
