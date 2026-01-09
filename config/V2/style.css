@@ -77,6 +77,8 @@ tooltip {
 #custom-update,
 #idle_inhibitor,
 #custom-omarchy,
+#custom-voxtype,
+#custom-voxtype.recording,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 14px;
@@ -179,6 +181,16 @@ tooltip {
     color: #282828;
 }
 
+#custom-voxtype {
+  background-color: #3c3836;
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  background-color: #3c3836;
+  color: #a55555;
+}
 
 /* Specific Module */
 

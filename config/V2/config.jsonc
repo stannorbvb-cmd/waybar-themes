@@ -11,6 +11,7 @@
   "modules-left": [
       "custom/omarchy",  
       "clock",
+      "custom/voxtype",
       "custom/weather",
       "idle_inhibitor",
       "hyprland/workspaces",
@@ -58,6 +59,19 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
+  },
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
   },
    "hyprland/window": {
     "format": "{title} - {class}",
@@ -229,8 +243,12 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
+    },
+       "ignored-players": [
+      "firefox",
+      "chromium",
+      "brave"
+       ]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
