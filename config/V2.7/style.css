@@ -83,6 +83,9 @@ tooltip {
 #custom-weather,
 #custom-update,
 #idle_inhibitor,
+#custom-voxtype,
+#custom-voxtype.recording,
+#custom-voxtype.transcribing,
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
@@ -174,6 +177,14 @@ tooltip label {
     font-weight: normal;
 }
 
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
 
 /* Specific animation Module */
 
