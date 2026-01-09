@@ -18,7 +18,7 @@ yay -S wttrbar
 - include weather, mpris, hyprland/window / pacman/update module / screenrecord button stop <br>
 ##### V1 Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/v1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 <img width="2560" height="1440" alt="screenshot-2025-09-07_18-38-28" src="https://github.com/user-attachments/assets/16c8b398-d1b3-4519-bcbe-e15ad920c7ff" />
 
