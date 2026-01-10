@@ -1,8 +1,6 @@
 {
   "reload_style_on_change": true,
-  "layer": "top",
   "position": "top",
-  "mod": "dock",
   "margin-top": 1,
   "height": 25,
   "width": 1100,
@@ -31,6 +29,7 @@
   "modules-center": [
     "mpris",
     "clock",
+    "custom/voxtype",
     "custom/weather"
   ],
   "modules-right": [
@@ -79,6 +78,19 @@
     "tooltip-format": "Omarchy update available",
     "signal": 7,
     "interval": 21600
+  },
+    "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
   },
   "custom/updatespacman": {
     "format": "{icon}",
@@ -254,8 +266,8 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
