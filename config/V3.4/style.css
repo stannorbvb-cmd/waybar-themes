@@ -103,11 +103,6 @@ tooltip {
 }
 
 
-#custom-update {
-  font-size: 10px;
-  margin: 2px;
-}
-
 #clock, #idle_inhibitor {
   margin-left: 8.75px;
 }
