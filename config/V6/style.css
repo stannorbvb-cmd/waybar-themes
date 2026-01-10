@@ -54,7 +54,6 @@ margin-left: 8px;
     margin-left: -6px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border-radius: 26px;
 }
 
 #workspaces button {
@@ -71,7 +70,7 @@ margin-left: 8px;
 #workspaces button:hover {
     background-color: @foreground;
     min-width: 25px;
-    border-radius: 1px;
+    border-radius: 2px;
     transition: all 0.15s ease-in-out;
 }
 #workspaces button.empty {
@@ -136,6 +135,15 @@ tooltip {
 tooltip label {
     color: @foreground;
     font-weight: normal;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
 }
 
 /* Specific animation Module */
