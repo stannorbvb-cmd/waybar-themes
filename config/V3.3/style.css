@@ -165,7 +165,9 @@ tooltip label {
 }
 
 #mpris{
-color: alpha(@foreground, 0.95);
+padding-top: 2px;
+margin-left: 8px;
+  color: alpha(@foreground, 0.95);
 animation: repeat;
 	animation-name: blink;
 	animation-duration: 3s;
@@ -187,6 +189,8 @@ animation: repeat;
 }
 
 #idle_inhibitor {
+  padding-left: 0px;
+  margin-left: 0px;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
