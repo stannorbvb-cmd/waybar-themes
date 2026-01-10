@@ -59,7 +59,6 @@ margin-left: 8px;
     margin-left: -6px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border-radius: 26px;
 }
 
 #workspaces button {
@@ -141,6 +140,15 @@ tooltip {
 tooltip label {
     color: @foreground;
     font-weight: normal;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
 }
 
 /* Specific animation Module */
