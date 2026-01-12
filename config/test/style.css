@@ -62,7 +62,7 @@
 }
 
 #clock-group {
-  margin-left: 270px;
+  margin-left: 300px;
 }
 
 
@@ -139,6 +139,11 @@ tooltip {
 #cpu,
 #memory {
   min-width: 40px;
+}
+
+#battery,
+#network {
+  min-width: 45px;
 }
 
 #custom-omarchy {
