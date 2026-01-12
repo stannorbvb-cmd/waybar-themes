@@ -148,14 +148,8 @@ tooltip {
 
 #custom-separator {
   opacity: 0.25;
-  padding-left: 4px;
+  padding-left: 2px;
   padding-right: 4px;
-}
-
-#custom-separator2 {
-  opacity: 0.25;
-  padding-left: 21px;
-  padding-right: 6px;
 }
 
 #custom-separator3 {

@@ -79,7 +79,7 @@
 },
 "group/right4":{
   "orientation": "horizontal",
-  "modules": ["custom/separator", "power-profiles-daemon","idle_inhibitor", "battery", "custom/separator2"]
+  "modules": ["custom/separator", "power-profiles-daemon","idle_inhibitor", "battery"]
 },
 "group/right5":{
   "orientation": "horizontal",
