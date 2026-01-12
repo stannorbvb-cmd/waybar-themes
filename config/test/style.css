@@ -52,11 +52,17 @@
 }
 
 #right-top {
- min-width: 200px;
+ min-width: 300px;
+}
+
+#right2 {
+  min-width: 100px;
+  margin-right: 0px;
+  margin-left: 50px;
 }
 
 #clock-group {
-  margin-left: 165px;
+  margin-left: 200px;
 }
 
 
