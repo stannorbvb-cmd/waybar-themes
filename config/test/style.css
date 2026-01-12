@@ -37,20 +37,7 @@
 
 .modules-right {
   margin-right: 4px;
-  min-width: 0;
 }
-
-#right2 {
-min-width: 250px;
-margin: 0px 0px 0px 0px;
-}
-
-#right1 {
-min-width: 150px;
-margin: 0px 0px 0px 0px;
-
-}
-
 
 #workspaces {
   padding: 0 0px;
@@ -115,15 +102,11 @@ margin: 0px 0px 0px 0px;
   padding-right: 6px;
   margin: 1px 1px 1px 1px;
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 tooltip {
   padding: 2px;
-}
-
-#cpu,
-#memory {
-  min-width: 40px;
 }
 
 #custom-omarchy {
@@ -152,11 +135,6 @@ tooltip {
 #power-profiles-daemon.balanced,
 #power-profiles-daemon.power-saver {
     margin: 0 6px 0px 0px;
-}
-
-#group-tray-expander {
-  background-color: @background;
-  color: @foreground;
 }
 
 #custom-updatespacman {
