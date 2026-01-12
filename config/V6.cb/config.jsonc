@@ -2,7 +2,8 @@
   "exclusive": true,
   "reload_style_on_change": true,
   "position": "bottom",
-  "spacing": 0,
+  "fixed-center": true,
+  "spacing": 2,
   "margin-top": 1,
   "modules-left": [
     "custom/separator",
@@ -11,6 +12,9 @@
     "hyprland/workspaces",
     "custom/separator",
     "tray",
+    "custom/voxtype",
+    "custom/update",
+    "custom/screenrecording-indicator",
     "custom/separator",
     "custom/updatespacman"
   ],
@@ -18,28 +22,27 @@
    "custom/windowpill"
   ],
   "modules-right": [
-   "group/right-group"
+  "group/right-group"
   ],
 "group/right-group": {
   "orientation": "vertical",
+  "justify": "left",
+  "align": "left",
   "modules": [
-    "group/right1",
-    "group/right2"
+   "group/right1",
+   "group/right2"
   ]
 },
-  "group/right1": {
+
+
+"group/right1":{
+  "orientation": "horizontal",
+  "modules": ["clock", "mpris"]
+},
+"group/right2": {
     "orientation": "horizontal",
     "modules": [
     "idle_inhibitor",
-    "custom/voxtype",
-    "custom/update",
-    "custom/screenrecording-indicator",
-    "clock"
-    ]
-  },
-  "group/right2": {
-    "orientation": "horizontal",
-    "modules": [
     "custom/separator",
     "backlight",
     "bluetooth",
@@ -76,6 +79,27 @@
     "format": "|", 
     "tooltip": false
 },
+"mpris": {
+    "format": "󰋎  {artist} - {title}",
+    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
+    "tooltip-format": "{album}",
+    "max-length": 28,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "player-icons": {
+      "default": "⏸",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "󰋐 "
+    },
+    "ignored-players": [
+      "firefox",
+      "chromium",
+      "brave"
+    ]
+  },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
     "on-click": "omarchy-menu",
@@ -161,7 +185,6 @@
     ]
   },
   "clock": {
-    "justify": "right",
     "format": "{:%H:%M - %d/%m/%Y}",
     "format-alt": "{:%H:%M - %d/%m/%Y}",
     "tooltip-format": "<span>{calendar}</span>",
@@ -271,27 +294,6 @@
     "on-click": "omarchy-launch-audio",
     "on-click-right": "pamixer -t"
   },
-  "mpris": {
-    "format": "󰋎  {artist} - {title}",
-    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
-    "tooltip-format": "{album}",
-    "max-length": 35,
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl previous",
-    "on-scroll-down": "playerctl next",
-    "player-icons": {
-      "default": "⏸",
-      "mpv": "🎵"
-    },
-    "status-icons": {
-      "paused": "󰋐 "
-    },
-    "ignored-players": [
-      "firefox",
-      "chromium",
-      "brave"
-    ]
-  },
   "custom/updatespacman": {
     "format": "{}{icon}",
     "return-type": "json",
@@ -307,21 +309,6 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
-  },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item"
-    },
-    "modules": [
-      "custom/expand-icon",
-
-    ]
-  },
-  "custom/expand-icon": {
-    "format": "  ",
-    "tooltip": false
   },
   "tray": {
     "icon-size": 12,

@@ -39,24 +39,17 @@
   margin-right: 4px;
 }
 
-#right1 {
-   margin-right: 0px;
-   margin-left: 275px;
-   min-width: 100px;
-  
-}
-
 #right2 {
-  min-width: 100px;
-  margin-right: 0px;
-  margin-left: 185px;
+min-width: 250px;
+margin: 0px 0px 0px 0px;
 }
 
-#right-group {
-margin-left: 0px;
-margin-right: 0px;
+#right1 {
 min-width: 150px;
+margin: 0px 0px 0px 0px;
+
 }
+
 
 #workspaces {
   padding: 0 0px;
@@ -123,12 +116,13 @@ min-width: 150px;
   padding-top: 0px;
 }
 
-#custom-updatespacman {
-  padding-top: 1px;
-}
-
 tooltip {
   padding: 2px;
+}
+
+#cpu,
+#memory {
+  min-width: 40px;
 }
 
 #custom-omarchy {
@@ -209,7 +203,7 @@ tooltip label {
 
 #custom-voxtype {
   min-width: 12px;
-  margin: 0 0 0 2.5px;
+  margin: 0px 0 0 0px;
 }
 
 #custom-voxtype.recording {
@@ -236,4 +230,21 @@ tooltip label {
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+#mpris {
+color: @foreground;
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
+    }
 }
