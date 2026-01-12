@@ -2,7 +2,7 @@
   "exclusive": true,
   "reload_style_on_change": true,
   "position": "bottom",
-  "spacing": 1,
+  "spacing": 2,
   "margin-top": 1,
   "modules-left": [
     "custom/separator",
@@ -11,6 +11,9 @@
     "hyprland/workspaces",
     "custom/separator",
     "tray",
+    "custom/voxtype",
+    "custom/update",
+    "custom/screenrecording-indicator",
     "custom/separator",
     "custom/updatespacman"
   ],
@@ -30,7 +33,6 @@
 "group/right-top": {
   "orientation": "horizontal",
   "modules": [
-    "group/right1",
     "group/clock-group"
   ]
 },
@@ -41,17 +43,7 @@
     "clock"
   ]
 },
-  "group/right1": {
-    "orientation": "horizontal",
-    "justify": "right",
-    "align": "right",
-    "modules": [
-    "custom/voxtype",
-    "custom/update",
-    "custom/screenrecording-indicator"
-    ]
-  },
-  "group/right2": {
+"group/right2": {
     "orientation": "horizontal",
     "modules": [
     "custom/separator",

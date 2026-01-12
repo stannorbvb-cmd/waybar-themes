@@ -39,12 +39,6 @@
   margin-right: 4px;
 }
 
-#right1 {
-   margin-right: 0px;
-   margin-left: 0px;
-   min-width: 100px;
-}
-
 #right2 {
   min-width: 100px;
   margin-right: 0px;
@@ -54,13 +48,12 @@
 #right-group {
   margin-left: 0px;
   margin-right: 0px;
-  min-width: 150px;
+  min-width: 180px;
 }
 
 #right-top {
-  margin-left: 0px;
-  margin-right: 0px;
-  min-width: 200px;
+ min-width: 60px;
+ margin-left: 165px;
 }
 
 #workspaces {
@@ -128,18 +121,13 @@
   padding-top: 0px;
 }
 
-#clock-group {
-  margin-left: 75px;
+tooltip {
+  padding: 2px;
 }
 
 #cpu,
 #memory {
-  min-width: 45px;
-}
-
-
-tooltip {
-  padding: 2px;
+  min-width: 40px;
 }
 
 #custom-omarchy {
@@ -220,7 +208,7 @@ tooltip label {
 
 #custom-voxtype {
   min-width: 12px;
-  margin: 0px 0 0 2.5px;
+  margin: 0px 0 0 0px;
 }
 
 #custom-voxtype.recording {
