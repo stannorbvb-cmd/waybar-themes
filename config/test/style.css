@@ -129,7 +129,12 @@
 }
 
 #clock-group {
-  margin-left: 54px;
+  margin-left: 75px;
+}
+
+#cpu,
+#memory {
+  min-width: 45px;
 }
 
 
