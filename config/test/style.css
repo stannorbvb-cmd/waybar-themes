@@ -36,12 +36,13 @@
 }
 
 .modules-right {
-  margin-right: -12px;
-
+  margin-right: 0px;
+  margin-left: 0px;
+  min-width: 0;
 }
 
 #right2 {
-  min-width: 350px;
+  min-width: 250px;
   margin-right: 0px;
   margin-left: 0px;
 }
