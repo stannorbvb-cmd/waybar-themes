@@ -50,7 +50,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="2560" height="469" alt="screenshot-2025-12-18_21-55-30" src="https://github.com/user-attachments/assets/0d994f4f-4b07-4fca-8f22-84f010ba1687" />
 
 ## Screenshots V2.1a
-- New Oxocarbon Waybar style with static colors (island-version) - Thanks to Astraeya for his window-script!
+- [Oxocarbon-Theme](https://github.com/HANCORE-linux/omarchy-oxocarbon-theme) Waybar style with static colors (island-version) - Thanks to Astraeya for his window-script!
 ##### V2.1a Install-command (copy and paste in your terminal): <br>
 ###### STEP1
 ```bash
@@ -69,7 +69,7 @@ omarchy-restart-waybar
 <img width="2560" height="528" alt="screenshot-2026-01-08_19-34-26" src="https://github.com/user-attachments/assets/9fcac4e6-e005-41e7-84fc-df9047befaed" />
 
 ## Screenshots V2.1b
-- New Oxocarbon Waybar style with static colors (long-bar version) - Thanks to Astraeya for his window-script!
+- [Oxocarbon-Theme](https://github.com/HANCORE-linux/omarchy-oxocarbon-theme) Waybar style with static colors (long-bar version) - Thanks to Astraeya for his window-script!
 ##### V2.1b Install-command (copy and paste in your terminal): <br>
 ###### STEP1
 ```bash
