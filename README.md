@@ -1,9 +1,10 @@
 ## Waybar Themes for opinionated Omarchy
 
  A collection of my Waybar themes – have fun exploring and customizing them!
- 
+
+### Usability 
 - These configs are Omarchy-based, including optional Omarchy-specific modules (logo, screen recorder, update module).
-- Aside from that, they use standard modules (e.g. pacman updates, wttrbar), so they can be used on any distro by simply removing the Omarchy modules and define colors.
+- Aside from that, they use standard modules (e.g. pacman updates, wttrbar), so <b>they can be used on any distro by simply removing the Omarchy modules and define colors.</b>
 
 ## Instructions
 
