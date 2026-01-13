@@ -116,6 +116,10 @@ tooltip {
   padding-top: 2px;
 }
 
+#custom-update {
+  font-size: 10px;
+}
+
 #tray {
     background-color: @background;
 }
