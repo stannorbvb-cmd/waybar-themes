@@ -11,8 +11,8 @@
     "hyprland/workspaces",
     "custom/separator",
     "tray",
-    "custom/separator",
-    "custom/updatespacman"
+    "custom/updatespacman",
+    "custom/separator"
   ],
   "modules-center": [
     "clock",
