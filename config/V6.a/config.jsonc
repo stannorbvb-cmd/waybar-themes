@@ -13,9 +13,10 @@
     "custom/screenrecording-indicator",
     "custom/separator",
     "tray",
+    "backlight",
+    "bluetooth",
     "custom/update",
     "custom/updatespacman",
-    "group/tray-expander",
     "custom/separator"
   ],
   "modules-center": ["hyprland/workspaces"],
@@ -33,9 +34,32 @@
   "hyprland/workspaces": {
     "on-click": "activate",
     "cursor": true,
-    "format": "{icon}"
-
-  },
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "9+"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    }
+},
 "custom/separator": {
     "format": "|", 
     "tooltip": false
@@ -223,7 +247,7 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": " 󰏖",
+      "has-updates": " 󰏖 ",
       "updated": ""
     },
     "exec-if": "which waybar-module-pacman-updates",
@@ -234,22 +258,6 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
-  },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item"
-    },
-    "modules": [
-      "custom/expand-icon",
-       "backlight",
-       "bluetooth"
-    ]
-  },
-  "custom/expand-icon": {
-    "format": "  ",
-    "tooltip": false
   },
   "tray": {
     "icon-size": 12,
