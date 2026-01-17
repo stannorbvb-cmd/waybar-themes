@@ -34,6 +34,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="381" alt="screenshot-2026-01-01_22-19-57" src="https://github.com/user-attachments/assets/16b385c5-c9c2-4a62-9446-177ece4795dd" />
 
+## Screenshots V1.6
+- long bar - dynamic **RAM/CPU rounded circle's**  <br>
+##### V1.6 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V1.6/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="510" alt="V16" src="https://github.com/user-attachments/assets/2863e1f3-06a5-4b5e-b456-81aa5dd44c44" />
 
 
 ## Screenshots V2
