@@ -26,6 +26,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="1440" alt="screenshot-2025-09-07_18-38-28" src="https://github.com/user-attachments/assets/16c8b398-d1b3-4519-bcbe-e15ad920c7ff" />
 
+## Screenshots V1.1
+- island version of V1.6 <br>
+##### V1.1 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V1.1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="392" alt="screenshot-2026-01-18_01-41-05" src="https://github.com/user-attachments/assets/faecaa18-018e-45af-bf63-14bd5bac8218" />
+
+
 ## Screenshots V1.5
 - V1 base evolved: numbered workspaces, ultra-minimal full-width bar with shadowed modules seamlessly integrated into the background <br>
 ##### V1.5 Install-command (copy and paste in your terminal): <br>
