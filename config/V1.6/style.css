@@ -29,7 +29,6 @@ window#waybar  {
   min-height: 20px;
   transition-property: background-color;
   transition-duration: .5s;
-  min-height: 0px;
 }
 
 
