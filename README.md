@@ -451,6 +451,16 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1920" height="921" alt="screenshot-2026-01-13_01-21-24" src="https://github.com/user-attachments/assets/50c82679-c2b0-4b3f-80eb-02eaec4aa553" />
 
+## Screenshot V6.cc 
+- lowered "inactive" opacity on modules, only clock and active modules set to 1 <br>
+##### V6.cc Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.cc/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1520" height="458" alt="V6 cc" src="https://github.com/user-attachments/assets/6a16088a-c9cc-40cb-9068-fc421a1a36fb" />
+
+
+
 
 ## Screenshot V6.d 
 - base config V6.c - tried to have less informations for "minimal" look / Style <br>
