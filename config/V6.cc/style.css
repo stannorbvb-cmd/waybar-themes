@@ -204,21 +204,18 @@ tooltip label {
 }
 
 
-/* --- Hover right module  --- */
+/* --- Hover for all modules  --- */
 #clock:hover,
 #tray:hover,
 #custom-expand-icon:hover,
 #cpu:hover,
 #memory:hover,
-#window:hover,
 #mpris:hover,
-#temperature:hover,
 #battery:hover,
 #power-profiles-daemon:hover,
 #bluetooth:hover,
 #backlight:hover,
 #custom-omarchy:hover,
-#custom-weather:hover,
 #custom-update:hover,
 #idle_inhibitor:hover,
 #custom-screenrecording-indicator,
