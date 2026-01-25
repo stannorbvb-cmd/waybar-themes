@@ -17,20 +17,21 @@ window#waybar {
 
 #waybar > box {
   border-radius: 3px;
-  border: 3px solid rgba(255, 255, 255, 0.0);
   margin: 0px 8px 3px 8px;
   background-color: @background;
   box-shadow: 1px 1px 3px 1px #101010;
   transition-property: background-color;
   transition-duration: .5s;
+  min-height: 25px;
 }
 
 .modules-left {
-  margin-left: 0px;
+  margin-left: 2px;
+  font-size: 12px;
 }
 
 .modules-right {
-  margin-right: 0px;
+  margin-right: 2px;
   font-size: 12px;
 }
 
@@ -84,22 +85,25 @@ font-size: 14px;
 #network,
 #bluetooth,
 #pulseaudio,
-#custom-omarchy,
 #idle_inhibitor,
 #backlight,
-#custom-weather,
 #clock,
+#group-tray-expander,
+#custom-expand-icon,
+#custom-omarchy,
+#custom-weather,
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 10px;
   font-size: 12px;
-  margin: 0 5px 0 5px;
-  padding: 0 1px;
+  margin: 0 3px 0 3px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 #custom-expand-icon {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 
@@ -128,16 +132,12 @@ tooltip {
 }
 
 #custom-screenrecording-indicator {
-    font-size: 12px;
-    padding: 0px;
-    margin: 2px;
-}
-
-#custom-screenrecording-indicator {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   color: transparent;
+  padding-left: 0px;
+  padding-right: 3px;
 }
 
 #custom-screenrecording-indicator.active {
