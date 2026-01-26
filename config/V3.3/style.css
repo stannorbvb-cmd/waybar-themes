@@ -72,6 +72,11 @@ window#waybar {
   opacity: 0.3;
 }
 
+#workspaces button.empty.active {
+  color: @background;
+  opacity: 1;
+}
+
 
 #custom-omarchy {
 padding-top: 1px;
