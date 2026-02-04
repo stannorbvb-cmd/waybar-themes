@@ -484,6 +484,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="498" alt="V6cd" src="https://github.com/user-attachments/assets/376015a0-23b9-4d79-90cf-54d176109aef" />
 
+## Screenshot V6.ce 
+- short version of V6.cd - moved power-profile, backlight, bluetooth, network in group-extend <br>
+##### V6.ce Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.ce/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1204" height="511" alt="V6 ce" src="https://github.com/user-attachments/assets/bc86bc67-5cde-4591-b989-ad921193c5d1" />
+
+
 
 ## Screenshot V6.d 
 - base config V6.c - tried to have less informations for "minimal" look / Style <br>
