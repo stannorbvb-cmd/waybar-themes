@@ -8,7 +8,7 @@
   border: none;
   padding: 0px;
   min-height: 0;
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: 'JetBrainsMonoNL Nerd Font';
   transition: background-color .3s ease-out;
   font-weight: 900;
   font-size: 11px;
@@ -100,7 +100,7 @@ margin-left: 0px;
   min-width: 12px;
   padding: 0 4px;
   margin: 0px 2px 0px 2px;
-  opacity: 1;
+  opacity: 0.75;
 }
 
 #custom-omarchy {
@@ -121,6 +121,13 @@ opacity: 1;
 opacity: 0.4;
 }
 
+#custom-update {
+opacity: 1;
+}
+
+#custom-updatespacman {
+opacity: 1;
+}
 
 #idle_inhibitor.activated {
 opacity: 1;
