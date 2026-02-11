@@ -21,8 +21,8 @@
     "group/tray-expander",
     "idle_inhibitor",
     "custom/updatespacman",
-    "clock",
-    "battery"
+    "battery",
+    "clock"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
