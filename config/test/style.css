@@ -1,174 +1,160 @@
 @import "../omarchy/current/theme/waybar.css";
 
-
 * {
-  /* background-color: @background; */
-  /* color: @foreground; */
-  
-  border-radius: 0;
   border: none;
-  text-shadow: none;
-  padding: 0;
-	min-height: 0;
-  font-family: 'CaskaydiaCove Nerd Font Propo';
+  font-family: 'CaskaydiaMono Nerd Font Propo';
+  min-height: 0;
 }
 
-#waybar  {
-  background-color: @transparent;
+tooltip {
+  opacity: 1;
+
+ }
+
+ window#waybar {
+  background-color: transparent;
+  color: @foreground;
+  
+}
+
+window#waybar.empty #window{
+  background: transparent;
+  color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 #waybar > box {
-  color: @foreground;
-  background-color: @background;
-  margin: 2px 6px 2px 6px;
-  padding: 0px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 12px;
-  transition-property: background-color;
-  transition-duration: .5s;
-  min-height: 30px;
-}
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    margin: 0px 8px 4px 8px;
+    background-color: alpha(@background, 1);
+    box-shadow: 1px 1px 3px 1px #101010;
+    transition-property: background-color;
+    transition-duration: .5s;
+ 
+ }
+
 
 .modules-left {
-  margin-left: 4px;
+   font-size: 12px;
 }
 
 .modules-right {
-  margin-right: 4px;
+  font-size: 12px;
 }
 
-#workspaces {
-  padding: 0 0px;
-  margin-top: 2px;
+.modules-center {
+  font-size: 12px;
 }
+
+#custom-omarchy {
+  font-size: 13px;
+}
+
 
 #workspaces button {
   all: initial;
-  padding: 0 1px;
-  margin: 0 3px;
-  opacity: 0.55;
+  font-size: 14px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0 6px;
+  margin: 0 0 0 1px;
+  opacity: 0.6;
   color: @foreground;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 #workspaces button.active {
     color: @foreground;
     opacity: 1.0;
-    font-size: 12px;
-}
-
-#workspaces button.empty {
-  opacity: 0.2;
-  font-size: 12px;
-  color: @foreground;
+    padding: 0 2px;
+    margin: 0 0 0 1px;
+    font-size: 16px;
+    transition: all 0.15s ease-in-out;
 }
 
 #workspaces button.empty.active {
- font-size: 12px;
- color: @foreground;
- opacity: 1.0;
+    color: @foreground;
+    opacity: 1.0;
+    font-size: 16px;
+    transition: all 0.15s ease-in-out;
 }
 
 
-
-#tray,
-#cpu,
-#memory,
-#battery,
-#backlight,
-#network,
-#bluetooth,
-#pulseaudio,
-#power-profiles-daemon,
-#mpris,
-#temperature,
-#idle_inhibitor,
-#custom-windowpill,
-#group-tray-expander,
-#custom-update,
-#custom-voxtype,
-#custom-voxtype.recording,
-#custom-voxtype.transcribing,
-#custom-expand-icon,
-#custom-omarchy,
-#custom-updatespacman,
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  padding-left: 6px;
-  padding-right: 6px;
-  margin: 1px 1px 1px 1px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-#clock{
-  padding-top: 4px;
-}
-
-
-
-tooltip {
-  padding: 2px;
-}
-
-#custom-omarchy {
-  padding-top: 2px;
-}
-
-#tray {
-    background-color: @background;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: @background;
-}
-
-.hidden {
-  opacity: 0;
+#workspaces button.empty {
+  opacity: 0.3;
+  font-size: 16px;
 }
 
 #power-profiles-daemon,
 #power-profiles-daemon.performance,
 #power-profiles-daemon.balanced,
-#power-profiles-daemon.power-saver {
-    margin: 0 6px 0px 0px;
+#power-profiles-daemon.power-saver,
+#hyprland-window,
+#window,
+#tray,
+#group-tray-expander,
+#cpu,
+#clock,
+#mpris,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-omarchy,
+#backlight,
+#idle_inhibitor,
+#custom-updatespacman,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 1px 3px 1px 3px;
+  padding: 0 4px;
 }
 
-#custom-updatespacman {
-  opacity: 0.55;
+tooltip {
+  padding: 0.5px;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+#tray-expander {
+  margin-left: 0px;
 }
 
 #custom-separator {
-  opacity: 0.25;
-  padding-left: 2px;
+  opacity: 0.2;
+  padding-top: 2px;
+  padding-left: 4px;
   padding-right: 4px;
-}
-
-#custom-separator3 {
-  opacity: 0.25;
-  padding-left: 2px;
-  padding-right: 6px;
 }
 
 tooltip {
  padding: 4px;
  background: @background;
  font-size: 12px;
+ border: 1px solid alpha(@foreground, 0.8);
  border-radius: 8px;
- border: 1.5px solid rgba(255, 255, 255, 0.25);
+ box-shadow: 1px 1px 3px 1px #131313;
+ font-weight: lighter;
 }
 tooltip label {
     color: @foreground;
+    font-weight: normal;
 }
 
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
 
 /* Specific animation Module */
 
@@ -191,23 +177,32 @@ tooltip label {
     }
 }
 
-#custom-voxtype {
-  min-width: 12px;
-  margin: 0px 0 0 0px;
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
+    }
 }
 
-#custom-voxtype.recording {
-  color: #a55555;
+
+#mpris {
+color: @foreground;
+font-size: 12px;
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #battery.warning {
   color: #c95d0f;
-  background-color: @background;
 }
 
 @keyframes blink2 {
   to {
-    background-color: @background;
+    background-color: transparent;
     color: #f53c3c;
   }
 }
@@ -220,21 +215,4 @@ tooltip label {
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-#mpris {
-color: @foreground;
-animation: repeat;
-	animation-name: blink;
-	animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes blink {
-    to {
-        color: #4a4a4a;
-        
-    }
 }
