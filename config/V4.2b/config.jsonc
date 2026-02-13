@@ -239,7 +239,8 @@
       "custom/expand-icon",
       "tray",
       "bluetooth",
-      "backlight"
+      "backlight",
+      "custom/separator"
     ]
   },
   "custom/expand-icon": {
