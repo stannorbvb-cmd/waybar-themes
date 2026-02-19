@@ -48,6 +48,7 @@ tooltip {
   margin: 3px 4px;
   background: linear-gradient(180deg, @background 85%, @foreground);
   border: 0.5px groove alpha(@foreground, 0.9);
+  padding: 0 2px;
 }
 
 #left2 {
