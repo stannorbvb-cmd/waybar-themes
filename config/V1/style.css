@@ -136,6 +136,8 @@ window#waybar.empty #window {
 #custom-weather,
 #custom-update,
 #custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator,
 #clock {
   min-width: 12px;
   padding: 0 5px;
@@ -197,6 +199,22 @@ tooltip label {
 #custom-voxtype.recording {
   color: #a55555;
 }
+
+
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 10px;
+  padding-bottom: 1px;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
+}
+
 /* Specific Module */
 
 #tray-expander {
