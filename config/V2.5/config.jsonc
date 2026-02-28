@@ -8,7 +8,7 @@
   "margin-bottom": 3,
   "spacing": 0,
   "modules-left": ["custom/omarchy", "hyprland/workspaces", "mpris", "hyprland/window"],
-  "modules-center": ["idle_inhibitor", "clock", "custom/voxtype", "custom/updatespacman", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["idle_inhibitor", "clock", "custom/idle-indicator", "custom/notification-silencing-indicator", "custom/voxtype", "custom/updatespacman", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "network",
     "tray",
@@ -57,7 +57,7 @@
       "(.*) - com.obsproject.Studio": "  $1 "
     }
   },
-   "custom/voxtype": {
+    "custom/voxtype": {
     "exec": "omarchy-voxtype-status",
     "return-type": "json",
     "format": "{icon}",
@@ -69,6 +69,18 @@
     "tooltip": true,
     "on-click-right": "omarchy-voxtype-config",
     "on-click": "omarchy-voxtype-model"
+  },
+    "custom/idle-indicator": {
+    "on-click": "omarchy-toggle-idle",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/idle.sh",
+    "signal": 9,
+    "return-type": "json"
+  },
+  "custom/notification-silencing-indicator": {
+    "on-click": "omarchy-toggle-notification-silencing",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/notification-silencing.sh",
+    "signal": 10,
+    "return-type": "json"
   },
     "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
