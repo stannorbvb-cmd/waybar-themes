@@ -188,18 +188,11 @@ tooltip label {
   color: #a55555;
 }
 
-#custom-idle-indicator {
-  min-width: 12px;
-  margin-left: 0px;
-  margin-right: 0;
-  font-size: 10px;
-  padding-bottom: 0px;
-}
-
+#custom-idle-indicator,
 #custom-notification-silencing-indicator {
   min-width: 12px;
   margin-left: 3px;
-  margin-right: 0;
+  margin-right: 3px;
   font-size: 10px;
   padding-bottom: 0px;
 }
