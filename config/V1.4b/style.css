@@ -22,7 +22,7 @@ window#waybar {
 
 #waybar > box {
   border-radius: 2px;
-  margin: 0px 2px 3px 2px;
+  margin: 1px 2px 3px 2px;
   background-color: @bg;
   box-shadow: 1px 1px 2px 0px #101010;
   transition-property: background-color;
@@ -141,6 +141,8 @@ padding: 0px;
 #custom-updatespacman,
 #bluetooth,
 #pulseaudio,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator,
 #custom-update,
 #custom-screenrecording-indicator,
 #clock {
@@ -206,6 +208,19 @@ tooltip label {
   color: #a55555;
 }
 
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 10px;
+  padding-bottom: 0px;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
+}
 
 /* Specific Module */
 
