@@ -93,6 +93,8 @@ tooltip {
 #idle_inhibitor,
 #custom-omarchy,
 #not-power,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator,
 #custom-voxtype,
 #custom-voxtype.recording,
 #custom-voxtype.transcribing,
@@ -204,6 +206,24 @@ tooltip label {
   background-color: alpha(@background, 0.85);
   color: #a55555;
 }
+
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 10px;
+  padding-bottom: 0px;
+}
+
+#custom-idle-indicator.active {
+  color: #a55555;
+}
+
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
+}
+
 
 /* Specific animation Module */
 
